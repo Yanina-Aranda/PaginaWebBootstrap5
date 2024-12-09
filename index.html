@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-personalizado.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark container bg-transparent fixed-top py-3">
+            <div class="container">
+                <a class="navbar-brand fs-3 text-uppercase fw-bold" href="#">Lorem <span class="fw-lighter">ipsum</span></a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title text-uppercase fw-bold" id="offcanvasNavbarLabel">Lorem <span class="fw-lighter">ipsum</span></h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row px-4">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item mx-2"></li>
+                                <a class="nav-link" href="#service">Service</a>
+                            </li>
+                            <li class="nav-item mx-2"></li>
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex gap-2" role="search">
+                            <input class="form-control me-2 d-none d-lg-block" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-colorbtn d-none d-lg-block fs-5" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/dynamic-hex-backgrounds-networking.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption top-0 mt-2 d-flex flex-column justify-content-center align-items-center">
+                        <p class="mt-4 fs-4 text-uppercase">El futuro comienza ahora</p>
+                        <h1 class="display-1 fw-bolder text-capitalize">Más que un smartphone, una nueva forma de vivir.</h1>
+                        <button type="button" class="btn btn-colorbtn py-2 fs-5 mt-5">Primary</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/network-connections.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption top-0 mt-2 d-flex flex-column justify-content-center align-items-center">
+                        <p class="mt-4 fs-4 text-uppercase">Velocidad, estilo y potencia.</p>
+                        <h1 class="display-1 fw-bold text-capitalize">El teléfono que redefine lo increíble.</h1>
+                        <button type="button" class="btn btn-colorbtn py-2 fs-5 mt-5">Primary</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/dynamic-hex-backgrounds-networking.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption top-0 mt-2 d-flex flex-column justify-content-center align-items-center">
+                        <p class="mt-4 fs-4 text-uppercase">Atrévete a explorar.</p>
+                        <h1 class="display-1 fw-bold text-capitalize">Innovación a tu alcance.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="about" class="about-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <div class="about-text">
+                            <h2 class="py-3">Lorem ipsum dolor sit amet</h2>
+                            <p class="py-2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, iste repellat, 
+                                aut aperiam inventore voluptatibus veritatis quisquam, illum ab laudantium nulla fugit 
+                                possimus velit earum? Cum explicabo non mollitia odit.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, iste repellat, 
+                                aut aperiam inventore voluptatibus veritatis quisquam, illum ab laudantium nulla fugit 
+                                possimus velit earum? Cum explicabo non mollitia odit.
+                            </p>
+                            <a href="#" class="btn btn-colorbtn py-2 fs-5 mt-3">Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md12 col-12">
+                        <div class="about-img">
+                            <img src="img/smartphone2.jpg" alt="smartphone" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="service service-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center p-5">
+                            <h2 class="service-title">Our services</h2>
+                            <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea eveniet 
+                                architecto iste quasi temporibus excepturi expedita neque libero ipsa accusantium 
+                                rerum nobis quas saepe, culpa sit earum, quia consequatur!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-white text-center p-3">
+                            <div class="card-bady">
+                                <img src="img/smartphone.png" alt="icono-smartphone" style="height: 27px;">
+                                <h3 class="card-title">Lorem ipsum</h3>
+                                <p class="lead fs-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente 
+                                    illum obcaecati aliquam delectus quam est. Eligendi tenetur totam laboriosam.
+                                    Soluta accusamus corporis delectus! Reiciendis laborum magni debitis. 
+                                    Vitae, sed.
+                                </p>
+                                <button class="btn btn-colorbtn">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-white text-center p-3">
+                            <div class="card-bady">
+                                <img src="img/smartphone.png" alt="icono-smartphone" style="height: 27px;">
+                                <h3 class="card-title">Lorem ipsum</h3>
+                                <p class="lead fs-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente 
+                                    illum obcaecati aliquam delectus quam est. Eligendi tenetur totam laboriosam.
+                                    Soluta accusamus corporis delectus! Reiciendis laborum magni debitis. 
+                                    Vitae, sed.
+                                </p>
+                                <button class="btn btn-colorbtn">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-white text-center p-3">
+                            <div class="card-bady">
+                                <img src="img/smartphone.png" alt="icono-smartphone" style="height: 27px;">
+                                <h3 class="card-title">Lorem ipsum</h3>
+                                <p class="lead fs-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente 
+                                    illum obcaecati aliquam delectus quam est. Eligendi tenetur totam laboriosam.
+                                    Soluta accusamus corporis delectus! Reiciendis laborum magni debitis. 
+                                    Vitae, sed.
+                                </p>
+                                <button class="btn btn-colorbtn">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer></footer>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

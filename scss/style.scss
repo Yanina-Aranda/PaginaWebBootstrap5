@@ -1,0 +1,14 @@
+@import "../libs/bootstrap/scss/functions";
+@import "../libs/bootstrap/scss/variables";
+//Colores
+$principal: rgb(252, 163, 17);
+$secundario: rgb(28, 37, 65);
+
+$custom-colors: (
+    "colorbtn":rgb(252, 163, 17)
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$btn-padding-x: 40px;
+$btn-border-radius: 30px;
+@import "../libs/bootstrap/scss/bootstrap";
